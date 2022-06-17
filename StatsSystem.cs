@@ -50,6 +50,7 @@ public class StatsSystem : MonoBehaviour
         // style should be based off our strength and be converted at a rate of 1 : 1.
         float style = strength * strengthMultiplier;
         // luck should be based off our intelligence and be converted at a rate of 1 : 1.5f
+        intelligenceMultiplier = Mathf.Clamp(intelligenceMultiplier, 1f, 1.5f);
         float luck = intelligence * intelligenceMultiplier;
         // rhythm should be based off our agility and be converted at a rate of 1 : 0.5.
         float rhythm = agility * agilityMultiplier;

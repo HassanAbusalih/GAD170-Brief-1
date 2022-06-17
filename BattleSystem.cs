@@ -58,7 +58,7 @@ public class BattleSystem : MonoBehaviour
             Debug.Log("Player Two wins!");
             Debug.Log(xpReward);
         }
-        else if (playerOneChanceToWin == playerTwoChanceToWin)
+        else
         {
             xpReward = 50;
             Debug.Log("Draw!");
